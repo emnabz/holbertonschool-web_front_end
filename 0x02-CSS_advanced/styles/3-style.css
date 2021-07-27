@@ -11,10 +11,10 @@ a {
     display: none;
 }
 .card-category {
-    color: #D73953;
+    color: var(--color-primary);
 }
 .section-tagline {
-    color: #D73953;
+    color: var(--color-primary);
 }
 :root {
     --color-primary: #D73953;
