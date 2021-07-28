@@ -279,7 +279,7 @@ html {
     background-color: var(--color-white);
     width: 0;
     height: 0.2rem;
-    transition: var(--transition-duration), var(--transition-cubic-bezier);
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
   }
   .nav .nav-item:hover .nav-link::before {
     background-color: var(--color-primary);
@@ -376,67 +376,69 @@ html {
     left: var(--header-logo-link-left);
   }
   .card-work .card-outer {
-      position: relative;
-      overflow: hidden;
+    position: relative;
+    overflow: hidden;
   }
   .card-work .card-image img {
-      height: 30rem;
-      width: 100%;
-      object-fit: cover;
-      vertical-align: bottom;
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
   }
   .card-work .card-inner {
-      position: absolute;
-      top: -0.1rem;
-      left: -0.1rem;
-      right: -0.1rem;
-      z-index: 1;  
+    position: absolute;
+    top: -0.1rem;
+    left: -0.1rem;
+    right: -0.1rem;
+    z-index: 1;
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
   }
   .card-work:hover .card-inner {
-      background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
   }
   .card-work .card-title {
-      text-align: center;
-      margin: 0;
-      opacity: 0;
-      height: 100%;
-      position: relative;
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    height: 100%;
+    position: relative;
   }
   .card-work .card-title a {
-      display: block;
-      text-decoration: none;
-      padding-top: 45%;
+    display: block;
+    text-decoration: none;
+    padding-top: 45%;
   }
   .card-work .card-title a::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
   }
   .card-work:hover .card-title {
-      opacity: 1;
+    opacity: 1;
   }
   .card-testimonial .card-quote {
-      position: relative;
+    position: relative;
   }
   .card-testimonial .card-quote::before {
-      content: "\201C";
-      position: absolute;
-      top: -4.5rem;
-      left: -1rem;
-      color: #efeded;
-      font-size: 10rem;
-      z-index: -1;
+    content: "\201C";
+    position: absolute;
+    top: -4.5rem;
+    left: -1rem;
+    color: #efeded;
+    font-size: 10rem;
+    z-index: -1;
   }
   .card-work:hover .card-image {
-      transform: scale(1.2);
-      transition: var(--transition-duration) var(--transition-cubic-bezier);
+    transform: scale(1.2);
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
   }
   .card-work:hover .card-outer {
-      transform: scale(0.95);
+    transform: scale(0.95);
   }
+  
   :root {
     --color-primary: #d73953;
     --color-black: #090909;
@@ -492,4 +494,4 @@ html {
     --header-logo-link-left: 0;
     --transition-duration: 0.3s;
     --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
-}
+  }
