@@ -350,7 +350,7 @@ html {
        padding: var(--header-padding);
    }
    .header-logo {
-       position: var(--header-padding);
+       position: var(--header-logo-position);
    }
    .header-logo a {
        display: var(--header-logo-link-display);
