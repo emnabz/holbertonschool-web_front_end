@@ -1,10 +1,13 @@
 /* My Style */ 
 
-@mixin body {
-    margin-left: 10px;
-    margin-right: 10px;
+@mixin margin($property) {
+    margin-left: $property;
+    margin-right: $property;
 }
-@mixin div {
-    margin-left: 15px;
-    margin-right: 15px;
+body {
+    @include margin(10px);
 }
+div {
+    @include margin(15px);
+}
+
