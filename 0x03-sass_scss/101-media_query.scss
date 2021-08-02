@@ -1,0 +1,13 @@
+/* My Style */
+
+$fontsize: 20px;
+$fontsize2: 14px;
+
+h1 {
+    font-size: $fontsize;
+}
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: $fontsize2;
+    }
+}
