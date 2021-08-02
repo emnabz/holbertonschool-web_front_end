@@ -1,0 +1,13 @@
+/* My Style */ 
+
+$marginbody: 10px;
+$margindiv: 15px;
+
+body {
+    margin-left: $marginbody;
+    margin-right: $marginbody;
+}
+div {
+    margin-left: $margindiv;
+    margin-right: $margindiv;
+}
