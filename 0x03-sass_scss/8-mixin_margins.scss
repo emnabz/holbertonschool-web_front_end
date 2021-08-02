@@ -1,13 +1,10 @@
 /* My Style */ 
 
-$marginbody: 10px;
-$margindiv: 15px;
-
-body {
-    margin-left: $marginbody;
-    margin-right: $marginbody;
+@mixin body {
+    margin-left: 10px;
+    margin-right: 10px;
 }
-div {
-    margin-left: $margindiv;
-    margin-right: $margindiv;
+@mixin div {
+    margin-left: 15px;
+    margin-right: 15px;
 }
