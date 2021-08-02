@@ -1,15 +1,13 @@
 /* My Style */
 
-$fontsize: 12px;
-$textcolorsuccess: #00FF00;
-$textcolorwarning: #FF0000;
-
-.info .success .warning {
-    font-size: $fontsize;
+.info {
+    font-size: 12px;
 }
 .success {
-    color: $textcolorsuccess;
+    color: #00FF00;
+    @extend .info;
 }
 .warning {
-    color: $textcolorwarning;
+    color: #FF0000;
+    @extend .info;
 }
