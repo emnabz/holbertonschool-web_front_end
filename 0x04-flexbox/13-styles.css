@@ -570,13 +570,13 @@
     .post-meta-list {
         flex-direction: column;
     }
-    .post-meta-list .strong {
+    .post-meta-list strong {
         color: var(--color-primary);
         font-size: var(--font-size-small);
         text-transform: uppercase;
         display: block;
     }
-    .post-meta-list .post-meta- {
+    .post-meta-list .post-meta {
         margin-bottom: 1rem;
         padding-bottom: 1rem;
         border-bottom: 0.2rem solid var(--color-light-grey);
@@ -592,12 +592,12 @@
         padding: 0;
         list-style: none;
     }
-    .tag-list .li {
+    .tag-list li {
         display: inline;
     }
-    .tag-list .li::after {
+    .tag-list li::after {
         content: ", ";
     }
-    .tag-list .li:last-child::after {
+    .tag-list li:last-child::after {
         content: "";
     }
