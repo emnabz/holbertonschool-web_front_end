@@ -718,7 +718,7 @@
     }
     .from-group:focus-within {
         background-color: var(--color-light-grey);
-        transition: .3s;
+        transition: 0.3s;
     }
 
     /* Form field
@@ -735,14 +735,14 @@
     .from-group .from-help {
         margin: 0;
         line-height: 1.3;
-        letter-spacing: .019rem;
+        letter-spacing: 0.019rem;
         color: var(--color-dark-grey);
         font-size: var(--font-size-small);
         max-height: 0;
-        transition: .3s;
+        transition: 0.3s;
         overflow: hidden;
     }
     .from-group:focus-within .from-help {
         max-height: 20rem;
-        margin: .4rem 0 0;
+        margin: 0.4rem 0 0;
     }
