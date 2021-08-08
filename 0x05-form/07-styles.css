@@ -958,7 +958,7 @@ html {
   
   /*** SEARCH FORM ***/
   .form-search{
-      , ,display: block;
+      display: block;
       padding: .5rem 0;
       position: relative;
   }
