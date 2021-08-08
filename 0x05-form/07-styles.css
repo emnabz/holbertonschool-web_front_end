@@ -834,7 +834,7 @@ input:not(:placeholder-shown) ~ .form-field-icon::after {
       background: none;
       cursor: pointer;
       z-index: 3;
-      transition: cubic-bezier(0, 0.795, 0, 1);
+      transition: widths cubic-bezier(0, 0.795, 0, 1);
   }
   .form-search input[type="search"]:focus {
       position: relative;
