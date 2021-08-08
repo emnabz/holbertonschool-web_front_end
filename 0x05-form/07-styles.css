@@ -5,20 +5,165 @@
     4. CARD
 */
 
-
 /*** 1. GLOBAL ***/
 
 /* Reset / Normalize
    ============================= */
 
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
-
-/* Variables
-   ============================= */
-
-   :root {
-    --color-primary: #D73953;
-    --color-black:  #090909;
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+  }
+  main {
+    display: block;
+  }
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+  }
+  pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+  a {
+    background-color: transparent;
+  }
+  abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+  }
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  img {
+    border-style: none;
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+  }
+  button,
+  input {
+    overflow: visible;
+  }
+  button,
+  select {
+    text-transform: none;
+  }
+  [type="button"],
+  [type="reset"],
+  [type="submit"],
+  button {
+    -webkit-appearance: button;
+  }
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner,
+  button::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring,
+  button:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  textarea {
+    overflow: auto;
+  }
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+  }
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+  }
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+  }
+  details {
+    display: block;
+  }
+  summary {
+    display: list-item;
+  }
+  template {
+    display: none;
+  }
+  [hidden] {
+    display: none;
+  }
+  
+  /* Variables
+     ============================= */
+  
+  :root {
+    --color-primary: #d73953;
+    --color-black: #090909;
     --color-white: #ffffff;
     --color-grey: #a0a0a0;
     --color-light-grey: #f3f3f3;
@@ -30,8 +175,9 @@
     --valid-color: var(--color-green);
     --error-color: var(--color-red);
   
-    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
@@ -74,7 +220,7 @@
     --nav-item-font-family: var(--font-family-headings);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
-    --nav-item-letter-spacing: .04rem;
+    --nav-item-letter-spacing: 0.04rem;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 0 2rem;
     --nav-item-link-hover: var(--color-white);
@@ -91,20 +237,22 @@
     --button-hover-background: var(--color-primary);
   
     /** MOTION **/
-    --transition-duration: .3s;
+    --transition-duration: 0.3s;
     --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
   }
   
   /* Base
       ============================= */
   
-  *, *:before, *:after {
+  *,
+  *:before,
+  *:after {
     box-sizing: border-box;
   }
   
   html {
-  scroll-behavior: smooth;
-  font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
   }
   
   body {
@@ -115,7 +263,12 @@
     line-height: var(--line-height-base);
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
   }
@@ -154,12 +307,12 @@
     transition-property: color, background-color;
   }
   .button-primary {
-      color: var(--color-white);
-      background: var(--color-primary);
+    color: var(--color-white);
+    background: var(--color-primary);
   }
   .button-primary:hover {
-      color: var(--color-primary);
-      background: var(--color-white);
+    color: var(--color-primary);
+    background: var(--color-white);
   }
   
   /* Helpers
@@ -198,7 +351,7 @@
     display: flex;
   }
   
-  [class*='col-'] {
+  [class*="col-"] {
     margin: 1rem;
   }
   
@@ -244,7 +397,7 @@
   }
   
   .nav .nav-link::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -407,7 +560,7 @@
   /* Section ABOUT US
       ============================= */
   
-  .section-about-us [class*='col-'] {
+  .section-about-us [class*="col-"] {
     align-self: center;
   }
   
@@ -478,7 +631,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    content: '';
+    content: "";
   }
   
   .card-work:hover .card-title {
@@ -530,7 +683,7 @@
   }
   
   .card-testimonial .card-quote::before {
-    content: '\201C';
+    content: "\201C";
     position: absolute;
     top: -4.5rem;
     left: -1rem;
@@ -550,7 +703,7 @@
   }
   
   .hero-article::before {
-    content: '';
+    content: "";
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 0;
@@ -627,13 +780,13 @@
     display: block;
   }
   
-  .post-meta-list [class*='post-meta'] {
+  .post-meta-list [class*="post-meta"] {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: 0.2rem solid var(--color-light-grey);
   }
   
-  .post-meta-list [class*='post-meta']:last-child {
+  .post-meta-list [class*="post-meta"]:last-child {
     border: none;
     margin-bottom: 3rem;
   }
@@ -657,114 +810,113 @@
   .tag-list li:last-child::after {
     content: "";
   }
-
+  
   /*** FORM ***/
-/* Comment section
-    ============================= */
-
-    .post-comments {
-        width: 80%;
-        margin: 10rem 0 0 auto;
-        padding-left: 7rem;
-    }
-    .post-comments .section-title {
-        font-variant: small-caps;
-    }
-
-    /* Basic form
-    ============================= */
-    form {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem 0;
-        margin: 0;
-    }
-    fieldset {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        border: none;
-        padding: 0 0 2rem;
-    }
-    label {
-        cursor: pointer;
-        display: block;
-        white-space: nowrap;
-        font-size: 1.4rem;
-        padding: 0 0 .5rem;
-    }
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        position: relative;
-        width: 100%;
-        padding: 1.2rem;
-        line-height: 1;
-        border: .1rem solid var(--color-black);
-        background-color: var(--color-white);
-        box-shadow: none;
-        outline: 0;
-    }
-    input[type="text"],
-    input[type="email"] {
-        padding-right: 3rem;
-    }
-    input[type="text"]:focus,
-    input[type="email"]:focus,
-    textarea:focus {
-        border: .1rem solid var(--color-grey);
-        background-color: var(--color-grey);
-    }
-    ::placeholder {
-        font-style: italic;
-        font-size: var(--font-size-small);
-    }
-
-    /* Form group
-============================= */
-
-    .from-group {
-        padding: 1rem;
-        margin: 0;
-        background-color: var(--color-white);
-    }
-    .from-group:focus-within {
-        background-color: var(--color-light-grey);
-        transition: .3s;
-    }
-
-    /* Form field
-============================= */
-    .from-field-container {
-        position: relative;
-    }
-    .from-field-icon {
-        font-style: normal;
-    }
-
-    /* Form help
-============================= */
-    .from-group .from-help {
-        margin: 0;
-        line-height: 1.3;
-        letter-spacing: .019rem;
-        color: var(--color-dark-grey);
-        font-size: var(--font-size-small);
-        max-height: 0;
-        transition: .3s;
-        overflow: hidden;
-    }
-    .from-group:focus-within .from-help {
-        max-height: 20rem;
-        margin: .4rem 0 0;
-    }
-
-    /* Form error handling
-============================= */
-
-/* The following code is used to place the icon in the after pseudo element. Because after and before are not possible in an input, we need to use a span that will be positioned on the right of our input. */
-
-input:not(:placeholder-shown) ~ .form-field-icon::after {
+  /* Comment section
+      ============================= */
+  
+  .post-comments {
+    width: 80%;
+    margin: 10rem 0 0 auto;
+    padding-left: 7rem;
+  }
+  .post-comments .section-title {
+    font-variant: small-caps;
+  }
+  /* Basic form
+      ============================= */
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    margin: 0;
+  }
+  
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 0;
+    padding: 0 0 2rem;
+  }
+  label {
+    cursor: pointer;
+    display: block;
+    white-space: nowrap;
+    font-size: 1.4rem;
+    padding: 0 0 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    position: relative;
+    width: 100%;
+    padding: 1.2rem;
+    line-height: 1;
+    border: 0.1rem solid var(--color-black);
+    background-color: var(--color-white);
+    box-shadow: none;
+    outline: 0;
+  }
+  input[type="text"],
+  input[type="email"] {
+    padding-right: 3rem;
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border: 0.1rem solid var(--color-grey);
+    background-color: var(--color-light-grey);
+  }
+  ::placeholder {
+    font-style: italic;
+    font-size: var(--font-size-small);
+  }
+  
+  /* Form group
+  ============================= */
+  
+  .form-group {
+    padding: 1rem;
+    margin: 0;
+    background-color: var(--color-white);
+  }
+  .form-group:focus-within {
+    background-color: var(--color-light-grey);
+    transition: 0.3s;
+  }
+  
+  /* Form field
+  ============================= */
+  .form-field-container {
+    position: relative;
+  }
+  .form-field-icon {
+    font-style: normal;
+  }
+  /* Form help
+  ============================= */
+  .form-group .form-help {
+    margin: 0;
+    line-height: 1.3;
+    letter-spacing: 0.019rem;
+    color: var(--color-dark-grey);
+    font-size: var(--font-size-small);
+    max-width: 0;
+    transition: 0.3s;
+    overflow: hidden;
+  }
+  .form-group:focus-within .form-help {
+    max-height: 20rem;
+    margin: 0.4rem 0 0;
+  }
+  
+  /* Form error handling
+  ============================= */
+  /* The following code is used to place the icon in the after pseudo element. Because after and before are not possible in an input, we need to use a span that will be positioned on the right of our input. */
+  
+  input:not(:placeholder-shown) ~ .form-field-icon::after {
     height: 100%;
     right: 0;
     pointer-events: none;
@@ -775,13 +927,14 @@ input:not(:placeholder-shown) ~ .form-field-icon::after {
   
   /* Because inputs are invalid by default, we need to be careful and show the icon when we are not in focus and when when the input is not empty (placeholder-shown). Careful with this one because it is not supported everywhere. */
   
-  input:required:invalid:not(:focus):not(:placeholder-shown) ~ .form-field-icon::after {
-    content: '✘';
+  input:required:invalid:not(:focus):not(:placeholder-shown)
+    ~ .form-field-icon::after {
+    content: "✘";
     color: var(--error-color);
   }
   
   input:required:valid ~ .form-field-icon::after {
-    content: '✔';
+    content: "✔";
     color: var(--valid-color);
   }
   
@@ -802,27 +955,27 @@ input:not(:placeholder-shown) ~ .form-field-icon::after {
   textarea:valid:not(:placeholder-shown) {
     border: 0.1rem solid var(--valid-color);
   }
-
+  
   /*** SEARCH FORM ***/
-  .form-search {
-      display: block;
-      padding: 0.5rem 0;
+  .form-search{
+      , ,display: block;
+      padding: .5rem 0;
       position: relative;
   }
-  .form-search .search-button {
+  .form-search .search-button{
       display: inline-block;
       background: transparent;
       border: 0;
       margin: 0;
       padding: 0;
   }
-  .search-button .search-icon {
+  .search-button .search-icon{
       fill: var(--color-white);
       width: 1.5rem;
       height: 1.5rem;
   }
-  .form-search input[type="search"] {
-      display: inline-block;
+  .form-search input[type="search"]{
+      display:  inline-block;
       color: var(--color-white);
       padding-right: 2rem;
       height: 3rem;
@@ -830,17 +983,17 @@ input:not(:placeholder-shown) ~ .form-field-icon::after {
       outline: none;
       position: absolute;
       width: 0;
-      right: 0;
+      right:0;
       background: none;
       cursor: pointer;
       z-index: 3;
-      transition: widths cubic-bezier(0, 0.795, 0, 1);
+      transition: widths cubic-bezier(0, 0.795,0,1);
   }
-  .form-search input[type="search"]:focus {
+  .form-search input[type="search"]:focus{
       position: relative;
       width: 15rem;
       z-index: 1;
-      border-bottom: 0.1rem solid var(--color-grey);
+      border-bottom: .1rem solid var(--color-grey);
       padding: 0;
       cursor: text;
       margin: 0 1rem;
