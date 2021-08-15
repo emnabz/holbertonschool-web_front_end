@@ -368,11 +368,9 @@
   
   .hero-homepage {
     background-image: url(images/banner-home.jpg);
-    background-position: 75% 0;
     background-repeat: no-repeat;
     background-size: 90rem auto;
     background-position: 56% 8rem;
-    background-size: 90rem auto;
   }
   
   .section-hero .section-body {
