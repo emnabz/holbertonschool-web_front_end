@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Task 2</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+        <script	src="https://code.jquery.com/jquery-3.6.0.slim.js"integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="crossorigin="anonymous"></script>
+        <script type="application/javascript">
+            window.onload = function() {
+                if (window.JQuery) {
+                    console.log("jQuery has been loaded correctly");
+                } else {
+                    console.log("jQuery has not been loaded correctly");
+            }
+        }
+        $(document).ready(function() {
+            function createFamilyTreet() {
+                var table = $("<table><tr><th>Firstname</th><th>Lastname</th></tr><tr><td>Guillaume</td><td>Salva</td></tr><tr><td>Paulette</td><td>Salva</td></tr><tr><td>Antoine</td><td>Salva</td></tr></table>")
+                $("body").append(table);
+            }
+            createFamilyTreet();
+        });
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>
