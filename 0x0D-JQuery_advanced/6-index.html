@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Task 6</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+        <script	src="https://code.jquery.com/jquery-3.6.0.slim.js"integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="crossorigin="anonymous"></script>
+
+    <script>      
+        $(document).ready(function() {
+            function createFamilyTree() {
+                let table = $ ("<table></table>");
+                let tr = $ ("<thead></th>Firstname</th><th>Lastname</th></thead>")
+                let th = $ ("<tbody></tbody>");
+                table.append(tr, th);
+                $("body").append(table);
+                }
+            function addNewMember(Firstname = "first", Lastname = "last", position= "after"){  
+                let tr = $ ("<tr></tr>");
+                let td = $ ("<td>" + Firstname + "</td>");
+                let td2 = $ ("<td>" + Lastname + "</td>");
+                let td3 = $ ("<td class='r'>(x)</td>").css("background-color", "orange");
+                td3.click(function(){
+                    $(this).parent().remove();
+                })
+                tr.append(td, td2, td3);
+
+                if (position == "before"){
+                    $("tbody").prepend(tr);
+                } else {
+                    $("tbody").append(tr);
+                }
+            }
+            function createForm(){
+                let box1 = $("<input type='text'>");
+                let box2 = $("<input type='text'>");
+                let select = $("<select><option value='before'>Before</option><option value='after'>After</option></select>");
+                let box3 = $("<input type='submit'>");
+                box3.click(function(){
+                    let option = $('select').first().val();
+                    addNewMember(box1.val(), box2.val(), option);
+                })
+                $("body").prepend(box1, box2, select, box3);
+            }
+            createFamilyTree();
+            createForm();
+        }
+         
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>
