@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+
+    </head>
+
+    <body>
+        <h1>Login to the website</h1>
+        <input id="firstname" placeholder="firstname">
+        <input id="email" placeholder="Email">
+        <button onclick="setCookies();">Log me in </button>
+
+        <h1>Cookies</h1>
+        <button onclick="showCookies();">Show the Cookies</button>
+        <script type="text/javascript">
+            function setCookies(){
+                let firstname = document.getElementById("firstname").value;
+                let email = document.getElementById("Email").value;
+                var today = new Date();
+                var expire = new Date();
+                expire.setTime(today.getTime() + 360000 * 24 * 10);
+                document.cookie = 'firstname=' + firstname + ";expires=" + expire.toGMTstring();
+                document.cookie = 'Email=' + email + ";expire=" + expire.toGMTstring();
+            }
+            function showCookies(){
+                let p = document.createElement("p");
+                p.innerHTML = "Cookies:" + document.cookie;
+                document.body.appendChild(p);
+            }
+            function getCookie(name){
+                var name = name + "=";
+                var cookie =  document.cookie.split(";");
+                for(var i = 0; i < cookie.length; i++) {
+                    var str = cookie[i];
+                    while(str.charAt(0) == " "){
+                        str = str.substring(1, str.length);
+                    }
+                if (str.indexof(name) == 0)
+                    return str.substring(name.length, str.length);
+                }
+                return "";
+            }
+        </script>
+    </body>
+</html>
